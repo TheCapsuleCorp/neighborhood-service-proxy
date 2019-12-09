@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div id="photos"></div>
+    <div id="neighborhoods"></div>
+    <div id="reviews"></div>
+    <div id="bookings"></div>
+<script src="/lib/react.development.js"></script>
+<script src="/lib/react.dom-development.js"></script>
+<script>
+  ReactDOM.render(
+    React.createElement(photos),
+    document.getElementById('photos')
+  );
+  ReactDOM.render(
+    React.createElement(neighborhoods),
+    document.getElementById('neighborhoods')
+  );
+  ReactDOM.render(
+    React.createElement(reviews),
+    document.getElementById('reviews')
+  );
+  ReactDOM.render(
+    React.createElement(bookings),
+    document.getElementById('bookings')
+  );
+</script>
+  </body>
+</html>
