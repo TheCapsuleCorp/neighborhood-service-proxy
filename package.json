@@ -1,17 +1,27 @@
 {
   "name": "CapBnB-Neighbors-Proxy",
-  "version": "1.0.0",
   "description": "A proxy server for front-end clone of AirBnB modules.",
-  "scripts": {
-    "start": "nodemon server/index.js",
+  "author": "Future Trunks",
+  "license": "ISC",
+  "engines": {
+    "node": ">=6.13.0"
   },
-  "author": "Capsule-Corp",
-  "license": "",
-  "devDependencies": {
-    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor"
+  "scripts": {
+    "dev": "nodemon",
+    "start": "node"
   },
   "dependencies": {
-    "express": "^4.15.0",
     "body-parser": "^1.19.0",
+    "express": "^4.17.1"
   },
+  "version": "1.0.0",
+  "main": "server/server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheCapsuleCorp/neighborhood-service-proxy"
+  },
+  "bugs": {
+    "url": "https://github.com/TheCapsuleCorp/neighborhood-service-proxy/issues"
+  },
+  "homepage": "https://github.com/TheCapsuleCorp/neighborhood-service-proxy#readme"
 }
