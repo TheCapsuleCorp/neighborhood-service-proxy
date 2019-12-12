@@ -1,33 +1,47 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>CAPBnB Neighborhoods Service</title>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <base href="/">
+    <link rel="stylesheet" href="./styles.css" type="text/css">
   </head>
   <body>
-    <div id="photos"></div>
-    <div id="neighborhoods"></div>
-    <div id="reviews"></div>
-    <div id="bookings"></div>
-<script src="/lib/react.development.js"></script>
-<script src="/lib/react.dom-development.js"></script>
+    <div>
+      <div id="parent-container"> </div>
+      <div id='photo-service'> Photos </div>
+      <div id="bottom-container">
+        <div id='reviews-service'> Reviews </div>
+        <div id='bookings-service'> Bookings </div>
+      </div>
+      <div id='neighborhoods-service'> Neighborhoods </div>
+    </div>
+
+
+<!-- <script src="/lib/react.development.js"></script>
+<script src="/lib/react.dom-development.js"></script> -->
+<script src="http://localhost:3000/bundle.js"></script>
+<!-- <script src="http://localhost:8080/"></script>  -->
 <script>
+  // ReactDOM.render(
+  //   React.createElement(photos),
+  //   document.getElementById('photos')
+  // );
+  console.log(Neighborhoods);
   ReactDOM.render(
-    React.createElement(photos),
-    document.getElementById('photos')
+    React.createElement(Neighborhoods.default),
+    document.getElementById('neighborhoods-service')
   );
-  ReactDOM.render(
-    React.createElement(neighborhoods),
-    document.getElementById('neighborhoods')
-  );
-  ReactDOM.render(
-    React.createElement(reviews),
-    document.getElementById('reviews')
-  );
-  ReactDOM.render(
-    React.createElement(bookings),
-    document.getElementById('bookings')
-  );
+  // ReactDOM.render(
+  //   React.createElement(reviews),
+  //   document.getElementById('reviews')
+  // );
+  // ReactDOM.render(
+  //   React.createElement(bookings),
+  //   document.getElementById('bookings')
+  // );
 </script>
   </body>
 </html>
